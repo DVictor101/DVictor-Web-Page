@@ -167,14 +167,20 @@ font-family: 'Roboto', sans-serif;*/
 /*OUR HTML CONTENT STYLING STARTS HERE*/
 * {
   text-decoration: none;
+  list-style-type: none;
 }
 body {
   background-color: #f3f3f3;
 }
+/*HEDER STYLING STARTS HERE*/
 header {
   background-color: #fff;
   height: 100px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 header .header_logo {
   font-family: "Oswald", sans-serif;
@@ -203,12 +209,17 @@ header .header_logo {
 }
 header nav ul li {
   display: inline-block;
-  float: left;
+
   padding: 0 10px;
 }
 .header_cases {
   display: none;
 }
+/*MAIN STYLING STARTS HERE*/
+main {
+  padding-top: 100px;
+}
+/*FIRST SECTION OF MAIN*/
 .index_banner {
   width: 100%;
   height: calc(100vh - 100px);
@@ -238,4 +249,166 @@ header nav ul li {
   font-weight: 100;
   line-height: 40px;
   margin-top: 10px;
+}
+/*SECTION SECTION OF MAIN STARTS HERE THE ONE CONTAINING THE CASES AND OTHERS*/
+.index-section2_div,
+.index-section2_divrec {
+  margin: 16px 16px 0;
+  height: 100px;
+  width: calc(100% - 40px);
+  background-color: #d2b7b7;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index-section2_div h3,
+.index-section2_divrec h3 {
+  color: rgb(17, 17, 17);
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/*FOOTER STYLING STARTS HERE*/
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  background-color: #111;
+  margin-top: 20px;
+}
+.footer_1stsection {
+  width: 100%;
+  float: left;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_1stsection ul li a {
+  color: white;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  font-size: 16px;
+}
+.footer-2ndsection {
+  display: none;
+}
+.footer_thirdsection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_thirdsection a img {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+/*DESTOP VERSION OF THE STYLING*/
+@media only screen and (min-width: 1000px) {
+  .header_logo {
+    margin: 30px 0;
+    text-align: left;
+    line-height: 40px;
+    border-right: 3px solid black;
+    float: left;
+    padding: 0px 20px 0 40px;
+  }
+
+  .nav_ul {
+    margin: 20px;
+    float: left;
+  }
+
+  .header-nav_link {
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  .header_cases {
+    display: block;
+    float: right;
+    margin-right: 40px;
+    padding: 0 20px;
+    line-height: 40px;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+  }
+  /*BACKGROUND IMAGE*/
+  .index_banner {
+    height: 1000px;
+
+    background-position: 20%;
+  }
+  /*THE SECOND SETION OF MAIN STARTS HERE THE ONE CONTAINING THE CASES AND OTHERS*/
+
+  .wrapper {
+    width: 1000px;
+  }
+  .index_section2 {
+    width: 100%;
+  }
+  .index-section2_tabone {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .index-section2_tab {
+    display: flex;
+    flex-direction: column;
+  }
+  .index-section2_subtab {
+    display: flex;
+  }
+  .subtab_linkone {
+    width: 54%;
+  }
+  .subtab_linktwo {
+    width: 50%;
+    overflow: hidden;
+  }
+  .index-about_sec {
+    display: flex;
+  }
+  .index-about_sec a {
+    width: 50%;
+  }
+  .footer-2ndsection {
+    display: block;
+  }
+  .footer_flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .footer_1stsection {
+    float: left;
+    width: 25%;
+  }
+  .footer-2ndsection {
+    width: 75%;
+  }
+  .footer_1stsection ul li a {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+    font-weight: 900;
+  }
+  .footer-2ndsection ul li {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 900;
+  }
+  .footer-2ndsection ul li a {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 800;
+  }
 }
